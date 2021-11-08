@@ -1,4 +1,8 @@
-baseURL = 'https://hugo.mccdama.fr'
+[context.branch-deploy]
+command = "hugo --gc --minify -b $https://hugo.mccdama.fr"
+
+[context.production.environment]
+    BASE_URL = 'https://hugo.mccdama.fr'
 
 [context.production.environment]
   HUGO_VERSION = "0.83.1"
